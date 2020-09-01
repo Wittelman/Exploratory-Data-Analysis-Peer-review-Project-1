@@ -1,5 +1,5 @@
 #Plot 2
-power <- read.csv(".household_power_consumption.txt",sep=";")
+power <- read.csv("./household_power_consumption.txt",sep=";")
 subpower <- subset(power,power$Date=="1/2/2007" | power$Date =="2/2/2007")
 
 subpower$Date <- as.Date(subpower$Date, format="%d/%m/%Y")
